@@ -6,13 +6,7 @@ A high-performance desktop file organizer that turns chaos into zen.
 
 Designed for Linux with seamless compatibility for Windows and macOS.
 
-## 📁 Ready-to-use Templates
-Don't want to build rules from scratch? Import our curated templates from the `/templates` directory:
-- **Standard Zen**: For everyday users.
-- **Developer Pro**: For coders managing logs and backups.
-- **Media Creator**: For photographers and videographers.
-
-## Core Engine
+## 🧠 Core Engine
 
 SuperD’s backend is built with Wails (Go) and centers on a Smart Priority Engine and an auditable Undo System.
 
@@ -40,7 +34,7 @@ SuperD’s backend is built with Wails (Go) and centers on a Smart Priority Engi
 - `UndoByID` walks the transaction in reverse and restores each file to its original location.
 - The history is persisted (capped to the most recent entries) for reliability and quick recovery.
 
-## Frontend
+## 🎨 Frontend
 
 The UI is implemented in Svelte 5 (Runes) with Tailwind 4 utility classes, focused on clarity and speed:
 - Flat Professional UI: deliberately avoids backdrop-blur and similar GPU-heavy effects to eliminate overhead, ensuring 60FPS scrolling on large datasets.
@@ -49,7 +43,7 @@ The UI is implemented in Svelte 5 (Runes) with Tailwind 4 utility classes, focus
 - Smart Conflict Detector: flags identical triggers (same `pattern` + `extension`) that target different folders, making conflicting rules obvious.
 - Schema Architect: an inline editor to create, adjust, import, and export rule sets.
 
-## Key Features
+## 🚀 Key Features
 - Smart Pattern Matching (wildcards `*` and single-char `?`)
 - Specificity Scoring: precise patterns win over generic extensions
 - Watch Sectors management with quick attach/reset controls
@@ -58,17 +52,23 @@ The UI is implemented in Svelte 5 (Runes) with Tailwind 4 utility classes, focus
 - Logic Merging: import/export rules and merge without duplicating names
 - Sensible defaults: Images/Documents rules out of the box; uncategorized fallback
 
-## Why Wails + Svelte 5?
+## 📁 Ready-to-use Templates
+Prefer a head start? Import curated JSON templates from `/templates` tailored to common workflows:
+- **Standard Zen** — balanced defaults for everyday organization.
+- **Developer Pro** — tuned for logs, backups, and code artifacts.
+- **Media Creator** — optimized for photos, videos, and creative assets.
+
+## 🤝 Why Wails + Svelte 5?
 - Native feel without bundling a full browser: Wails provides lightweight desktop shells across Linux, Windows, and macOS.
 - Modern reactive state management: Svelte 5 Runes offers fine-grained reactivity with minimal boilerplate.
 - Performance-first frontend: Tailwind utility classes and flat visual choices keep the UI responsive on large file sets.
 - Simple cross-boundary calls: Go methods are exported to the frontend, enabling straightforward orchestration of scans and moves.
 
-## Installation
+## 🛠️ Installation
 
 Prerequisites:
-- Go 1.23+
-- Node.js 18+
+- Go 1.25+
+- Node.js 22+
 - Wails v2 CLI
 
 Linux (Ubuntu/Debian) dependencies:
@@ -103,12 +103,12 @@ First-run initialization:
 - `schema.json` — your rule set: patterns, extension pools, and target directories.
 - `history.json` — transaction log used by the Undo System to restore previous file locations.
 
-## Project Structure
+## 🗂️ Project Structure
 - `/app.go`: Core application logic and OS bridge.
 - `/history.go`: Transactional undo/redo engine.
 - `/frontend/src`: Svelte 5 reactive components and professional flat theme.
 - `/build`: Production assets and platform-specific manifests.
 
-## License
+## ⚖️ License
 
 Copyright © 2025. All rights reserved.
