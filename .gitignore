@@ -2,6 +2,7 @@
 build/bin/
 build/windows/
 build/darwin/
+build/AppDir/
 # File backup otomatis wails
 wails.json.backup
 # Metadata sum Go

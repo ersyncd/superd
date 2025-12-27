@@ -71,7 +71,7 @@ Prerequisites:
 - Node.js 22+
 - Wails v2 CLI
 
-Linux (Ubuntu/Debian) dependencies:
+Linux dependencies:
 ```
 Ubuntu / Debian
 sudo apt install libgtk-3-dev libwebkit2gtk-4.0-dev gcc g++ make pkg-config
