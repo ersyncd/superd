@@ -72,10 +72,22 @@ Prerequisites:
 - Wails v2 CLI
 
 Linux (Ubuntu/Debian) dependencies:
-
-```bash
-sudo apt update && sudo apt install -y libgtk-3-dev libwebkit2gtk-4.0-dev gcc g++ make pkg-config
 ```
+Ubuntu / Debian
+sudo apt install libgtk-3-dev libwebkit2gtk-4.0-dev gcc g++ make pkg-config
+
+Arch / CachyOS
+sudo pacman -S webkit2gtk gtk3 devtools
+
+Fedora
+sudo dnf install gtk3-devel webkit2gtk3-devel gcc-c++ make
+```
+
+Windows
+- Requires WebView2 Runtime (Win10/11 include it) and a C compiler (e.g., Mingw-w64) if building from source.
+
+macOS
+- Requires Xcode Command Line Tools.
 
 Setup and Run:
 
