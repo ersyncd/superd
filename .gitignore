@@ -1,0 +1,39 @@
+# --- WAILS & GO ARTIFACTS ---
+build/bin/
+build/windows/
+build/darwin/
+# File backup otomatis wails
+wails.json.backup
+# Metadata sum Go
+go.sum
+
+# --- NODE / FRONTEND DEPENDENCIES ---
+# Gue liat lo punya node_modules di ROOT dan di FRONTEND. Dua-duanya harus dibuang.
+node_modules/
+frontend/node_modules/
+# File cache checksum md5 svelte/vite
+frontend/package.json.md5
+# Log error npm
+npm-debug.log*
+
+# --- BUILD OUTPUTS ---
+# Folder dist hasil kompilasi frontend
+frontend/dist/
+
+# --- AUTO-GENERATED BINDINGS ---
+# JANGAN dimasukkan ke Git. Biar system orang lain yang generate pas build.
+frontend/wailsjs/
+
+# --- DATA LOKAL / PRIVACY ---
+# File ini kemungkinan bakal muncul pas lo jalanin app (isi path asli folder lo)
+config.json
+schema.json
+history.json
+# Folder hidden data app
+.superd/
+
+# --- IDE & SYSTEM TRASH ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
