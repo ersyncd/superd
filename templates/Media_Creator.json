@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Raw Footage",
+    "extensions": [
+      ".mp4",
+      ".mov",
+      ".avi"
+    ],
+    "pattern": "MOV_*",
+    "target_dir": "Media/Video/Raw",
+    "conflict_strategy": "rename"
+  },
+  {
+    "name": "Final Renders",
+    "extensions": [
+      ".mp4"
+    ],
+    "pattern": "FINAL_*",
+    "target_dir": "Media/Video/Exports",
+    "conflict_strategy": "rename"
+  },
+  {
+    "name": "Design Assets",
+    "extensions": [
+      ".psd",
+      ".ai",
+      ".fig"
+    ],
+    "pattern": "",
+    "target_dir": "Media/Design",
+    "conflict_strategy": "skip"
+  }
+]

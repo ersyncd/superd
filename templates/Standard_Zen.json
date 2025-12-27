@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Standard Documents",
+    "extensions": [
+      ".pdf",
+      ".docx",
+      ".xlsx",
+      ".pptx",
+      ".txt"
+    ],
+    "pattern": "",
+    "target_dir": "Documents",
+    "conflict_strategy": "rename"
+  },
+  {
+    "name": "Quick Images",
+    "extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".svg",
+      ".webp"
+    ],
+    "pattern": "",
+    "target_dir": "Pictures",
+    "conflict_strategy": "rename"
+  },
+  {
+    "name": "Installers & Zips",
+    "extensions": [
+      ".zip",
+      ".rar",
+      ".7z",
+      ".deb",
+      ".iso"
+    ],
+    "pattern": "",
+    "target_dir": "Archives",
+    "conflict_strategy": "skip"
+  }
+]

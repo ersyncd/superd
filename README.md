@@ -6,6 +6,12 @@ A high-performance desktop file organizer that turns chaos into zen.
 
 Designed for Linux with seamless compatibility for Windows and macOS.
 
+## 📁 Ready-to-use Templates
+Don't want to build rules from scratch? Import our curated templates from the `/templates` directory:
+- **Standard Zen**: For everyday users.
+- **Developer Pro**: For coders managing logs and backups.
+- **Media Creator**: For photographers and videographers.
+
 ## Core Engine
 
 SuperD’s backend is built with Wails (Go) and centers on a Smart Priority Engine and an auditable Undo System.

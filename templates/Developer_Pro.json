@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Project Backups",
+    "extensions": [
+      ".zip",
+      ".tar.gz"
+    ],
+    "pattern": "backup_*",
+    "target_dir": "Dev/Backups",
+    "conflict_strategy": "rename"
+  },
+  {
+    "name": "Log Files",
+    "extensions": [
+      ".log"
+    ],
+    "pattern": "*.log",
+    "target_dir": "Dev/Logs",
+    "conflict_strategy": "overwrite"
+  },
+  {
+    "name": "SQL Dumps",
+    "extensions": [
+      ".sql"
+    ],
+    "pattern": "db_*",
+    "target_dir": "Dev/Database",
+    "conflict_strategy": "rename"
+  },
+  {
+    "name": "Scripts",
+    "extensions": [
+      ".sh",
+      ".py",
+      ".js"
+    ],
+    "pattern": "",
+    "target_dir": "Dev/Scripts",
+    "conflict_strategy": "skip"
+  }
+]
