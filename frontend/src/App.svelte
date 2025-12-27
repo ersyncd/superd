@@ -16,7 +16,6 @@
     ImportRulesDialog,
   } from "../wailsjs/go/main/App";
 
-  // --- LOGIC (TIDAK DISENTUH) ---
   let osInfo = $state("");
   let folders = $state([]);
   let files = $state([]);
